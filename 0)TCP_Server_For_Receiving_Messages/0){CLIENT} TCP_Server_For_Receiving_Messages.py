@@ -1,6 +1,6 @@
 import socket
 
-HOST = '192.168.51.1'
+HOST = ''#run the comannd written at the end and enter the value here
 PORT = 8080
 connect = (HOST, PORT)
 
