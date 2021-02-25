@@ -1,6 +1,6 @@
 import socket
 
-UDP_HOST = '192.168.51.1'
+UDP_HOST = socket.gethostbyname(socket.gethostname())
 UDP_PORT = 8080
 to = (UDP_HOST, UDP_PORT)
 
