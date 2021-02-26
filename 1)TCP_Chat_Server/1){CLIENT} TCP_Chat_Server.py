@@ -1,7 +1,7 @@
 import socket
 import threading
 
-HOST = ''#run the command at the end
+HOST = '192.168.51.1'
 PORT = 8080
 connect = (HOST, PORT)
 
@@ -34,5 +34,3 @@ recv_thread=threading.Thread(target=receinve)
 recv_thread.start()
 write_thread=threading.Thread(target=write)
 write_thread.start()
-
-#print(socket.gethostbyname(socket.gethostname))
