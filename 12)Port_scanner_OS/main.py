@@ -1,7 +1,7 @@
 from scapy.all import *
 from scapy.layers.inet import IP, ICMP
 
-pack = IP(dst="100.65.181.155") / ICMP()
+pack = IP(dst="") / ICMP()
 resp = sr1(pack, timeout=2)
 
 if resp is None:
@@ -14,3 +14,5 @@ elif IP in resp:
     elif resp.getlayer(IP).ttl <= 225:
         theos = "Cisco Router"
     print(f"os:{theos}")
+
+ #in dst enter ur lan ip
